@@ -69,7 +69,6 @@
 .primary-button{
     background-color: #E95A0B;
     color: white;
-    border-radius: 5px;
     padding: 19px 80px;
     font-size: 1rem;
     font-weight: 600;
@@ -128,6 +127,9 @@ header {
     .logo img{
         width: 55%;
     }
+    .link-cart a{
+        font-size: 1rem;
+    }
 }
 
 /* Banner Styles */
@@ -157,7 +159,7 @@ header {
     .banner{
         flex-direction: column-reverse;
         align-items: center;
-        margin-bottom: 65px;
+        margin-bottom: 50px;
     }
     .banner-content{
         width: 100%;
@@ -337,7 +339,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -366,6 +368,7 @@ header {
     border-bottom: 2px solid white;
     color: white;
     font-size: 1rem;
+    font-weight: 600;
     padding: 5px 0px;
 }
 
@@ -375,6 +378,7 @@ header {
     border-bottom: 2px solid white;
     color: white;
     font-size: 1.75rem;
+    font-weight: 600;
     padding: 5px 0px;
 }
 
@@ -388,6 +392,7 @@ header {
     .deal-info{
         font-size: 0.875rem;
         width: 336px;
+        margin-bottom: 50px;
     }
     .deal-grid{
     grid-template-columns: 1fr;
@@ -395,6 +400,9 @@ header {
     }
     .deal-offl, .deal-offr{
         font-size: 1.25rem;
+    }
+    .butr{
+        font-size: 1rem;
     }
 }
 
@@ -497,5 +505,11 @@ header {
     }
     .foot-container{
         flex-direction: column;
+    }
+    .footlog{
+        margin-bottom: 20px;
+    }
+    .foot-info{
+        font-size: 1rem;
     }
 }
