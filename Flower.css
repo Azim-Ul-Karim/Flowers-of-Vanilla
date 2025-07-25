@@ -320,14 +320,14 @@ header {
     gap: 25px;
 }
 
-.deal-card{
+.deal-card1, .deal-card2{
     position: relative;
     border-radius: 14px;
     overflow: hidden;
     color: white;
 }
 
-.deal-card img{
+.deal-card1 img, .deal-card2 img{
     width: 100%;
     height: 100%;
     display: block;
@@ -397,6 +397,9 @@ header {
     .deal-grid{
     grid-template-columns: 1fr;
     margin: 15px;
+    }
+    .deal-card2{
+        border-radius: 0;
     }
     .deal-offl, .deal-offr{
         font-size: 1.25rem;
