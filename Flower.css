@@ -1,0 +1,130 @@
+/* Noto serif font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Inter font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: regular;
+  font-style: normal;
+}
+
+/* Global Style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared Styles */
+
+.main-color{
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.orange-color{
+    color: #E95A0B;
+}
+
+.navicolor{
+    color: #252432;
+}
+
+.navmcolor{
+    color: #8987A1;
+}
+
+.prifoze{
+    font-size: 1.375rem;
+}
+
+.tifoze{
+    font-size: 3.125rem;
+}
+
+.bold-font{
+    font-weight: bold;
+}
+
+.semb-font{
+    font-weight: 600;
+}
+
+.primary-button {
+    background-color: #E95A0B;
+    color: white;
+    border-radius: 5px;
+    padding: 19px 80px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Inter;
+    border: none;
+    /* cursor: pointer; */
+}
+
+/* Header Styles */
+
+header {
+    max-width: 1140px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    gap: 48px;
+}
+
+.link-hidden ul{
+    display: flex;
+    gap: 48px;
+}
+
+.link-hidden li{
+    list-style: none;
+}
+
+.link-hidden a{
+    text-decoration: none;
+}
+
+.link-cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-cart a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px){
+    header{
+        margin: 16px 20px;
+    }
+    .link-hidden{
+        display: none;
+    }
+    .logo img{
+        width: 55%;
+    }
+}
