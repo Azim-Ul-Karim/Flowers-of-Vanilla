@@ -63,14 +63,17 @@
     font-weight: 600;
 }
 
-.primary-button {
+.med-font{
+    font-weight: 500;
+}
+
+.primary-button{
     background-color: #E95A0B;
     color: white;
     border-radius: 5px;
     padding: 19px 80px;
     font-size: 1rem;
     font-weight: 600;
-    font-family: Inter;
     border: none;
     /* cursor: pointer; */
 }
@@ -133,7 +136,7 @@ header {
 
 .banner{
     max-width: 1140px;
-    margin: 0 auto;
+    margin: 0 auto 120px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -156,6 +159,7 @@ header {
     .banner{
         flex-direction: column-reverse;
         align-items: center;
+        margin-bottom: 65px;
     }
     .banner-content{
         width: 100%;
@@ -168,4 +172,67 @@ header {
         font-size: 0.875rem;
     }
     
+}
+
+/* Plant Section */
+
+.plant{
+    max-width: 1140px;
+    margin: 0 auto 210px;
+    text-align: center;
+}
+
+.plant-title{
+    margin-bottom: 16px;
+}
+
+.plant-info{
+    width: 888px;
+    margin: 0 auto;
+}
+
+.plant-content{
+    margin-bottom: 49px;
+}
+
+.plant-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 10px;
+}
+
+.plant-image{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.plant-name{
+    margin-bottom: 20px;
+}
+
+.plant-price{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 576px){
+    .plant{
+        margin-bottom: 41px;
+    }
+    .plant-content{
+        margin-bottom: 30px;
+    }
+    .plant-title{
+        font-size: 1.5rem;
+    }
+    .plant-info{
+        font-size: 0.875rem;
+        width: 336px;
+    }
+    .plant-cards{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-evenly;
+    }
+    .plant-btn{
+        padding: 19px 30px;
+    }
 }
