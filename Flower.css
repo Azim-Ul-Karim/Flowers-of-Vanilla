@@ -231,8 +231,91 @@ header {
     .plant-cards{
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
+        gap: 20px;
+        margin: 15px;
     }
     .plant-btn{
         padding: 19px 30px;
+    }
+}
+
+/* Plants Lover Section */
+
+.lover{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.lover-image{
+    width: 100%;
+}
+
+.lover-image img{
+    width: 100%;
+}
+
+.badge{
+    position: absolute;
+    top: 2050px;
+    left: 30%;
+}
+
+.badge img{
+    width: 30%;
+}
+
+.lover-description{
+    margin: 25px;
+}
+
+@media screen and (max-width: 576px){
+    .lover{
+        flex-direction: column;
+        margin: 15px;
+    }
+    .badge{
+        display: none;
+    }
+    .lover-title{
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+    .lover-description{
+        font-size: 0.875rem;
+        width: calc(100% - 30px);
+    }
+}
+
+/* Deal Section */
+
+.deal{
+    max-width: 1440px;
+    margin: 120px auto;
+    text-align: center;
+}
+
+.deal-title{
+    margin-bottom: 16px;
+}
+
+.deal-info{
+    width: 888px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 576px){
+    .deal{
+        margin: 120px auto 50px;
+    }
+    .deal-title{
+        font-size: 1.5rem;
+    }
+    .deal-info{
+        font-size: 0.875rem;
+        width: 336px;
     }
 }
